@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.226,C:\Users\AnGel\Documents\Local AntiPublic dev AnGel\AntiPublic.dproj=C:\Users\AnGel\Documents\Local AntiPublic dev AnGel\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.000,=C:\Users\max_b\Documents\localap\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.758,=C:\Users\max_b\Documents\localap\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.861,=C:\Users\max_b\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.632,C:\Users\max_b\Documents\localap\Unit1.dfm=C:\Users\max_b\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.998,=C:\Users\AnGel\Documents\Local AntiPublic dev AnGel\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.591,C:\Users\max_b\Documents\localap\Project1.dproj=C:\Users\max_b\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.632,C:\Users\max_b\Documents\localap\Unit1.pas=C:\Users\max_b\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
