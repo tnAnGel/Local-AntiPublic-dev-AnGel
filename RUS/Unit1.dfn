@@ -5,11 +5,11 @@
     <header>
       <prop-group name="ITEHeaderProp">
         <prop prop-type="Version">9.0</prop>
-        <prop prop-type="SelfDateTime">44780.9941435185</prop>
-        <prop prop-type="OrigDateTime">44780.9922222222</prop>
+        <prop prop-type="SelfDateTime">44781.074375</prop>
+        <prop prop-type="OrigDateTime">44781.0686111111</prop>
         <prop prop-type="XlatDateTime">44780.9620138889</prop>
         <prop prop-type="Translated">0</prop>
-        <prop prop-type="UnTranslated">223</prop>
+        <prop prop-type="UnTranslated">211</prop>
       </prop-group>
     </header>
     <body>
@@ -39,10 +39,14 @@
         <prop prop-type="Created">44780.9664327083</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.Caption" resname="O:Form1.Caption">
-        <source>'[#DT#] Local AntiPublic v1.1.1 | dev AnGel'</source>
+        <source>'[#DT#] Local AntiPublic v1.2 | dev AnGel'</source>
         <prop-group name="ITEFieldProp">
         <prop prop-type="Created">44780.9664327083</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
+      <alt-trans>  <source>'[#DT#] Local AntiPublic v1.1.1 | dev AnGel'</source>
+          <target>'[#DT#] Local AntiPublic v1.2 | dev AnGel'</target>
+          <prop-group name="ITEFieldProp">
+          <prop prop-type="Modified">44780.8660398843</prop></prop-group>
+        </alt-trans></trans-unit>
       <trans-unit id="O:Form1.ClientHeight" resname="O:Form1.ClientHeight">
         <source>267</source>
         <prop-group name="ITEFieldProp">
@@ -703,435 +707,375 @@
         <prop-group name="ITEFieldProp">
         <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">137</prop><prop prop-type="Type">TImage</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
-      <trans-unit id="O:Form1.O:GroupBox1.O:Button1.Left" resname="O:Form1.O:GroupBox1.O:Button1.Left">
-        <source>11</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">138</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:GroupBox1.O:Button1.Top" resname="O:Form1.O:GroupBox1.O:Button1.Top">
-        <source>192</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">139</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:GroupBox1.O:Button1.Width" resname="O:Form1.O:GroupBox1.O:Button1.Width">
-        <source>75</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">140</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:GroupBox1.O:Button1.Height" resname="O:Form1.O:GroupBox1.O:Button1.Height">
-        <source>25</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">141</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:GroupBox1.O:Button1.Caption" resname="O:Form1.O:GroupBox1.O:Button1.Caption">
-        <source>'EN'</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">142</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:GroupBox1.O:Button1.TabOrder" resname="O:Form1.O:GroupBox1.O:Button1.TabOrder">
-        <source>0</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">143</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
       <trans-unit id="O:Form1.O:StatusBar1.Left" resname="O:Form1.O:StatusBar1.Left">
         <source>0</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">144</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">138</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:StatusBar1.Top" resname="O:Form1.O:StatusBar1.Top">
         <source>248</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">145</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">139</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:StatusBar1.Width" resname="O:Form1.O:StatusBar1.Width">
         <source>388</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">146</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">140</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:StatusBar1.Height" resname="O:Form1.O:StatusBar1.Height">
         <source>19</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">147</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">141</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:StatusBar1.Panels" resname="O:Form1.O:StatusBar1.Panels">
         <source>&lt;&gt;</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">148</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">142</prop><prop prop-type="Type">TStatusBar</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.Left" resname="O:Form1.O:CheckBox1.Left">
         <source>8</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">149</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">143</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.Top" resname="O:Form1.O:CheckBox1.Top">
         <source>137</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">150</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">144</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.Width" resname="O:Form1.O:CheckBox1.Width">
         <source>113</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">151</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">145</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.Height" resname="O:Form1.O:CheckBox1.Height">
         <source>17</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">152</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">146</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.TabStop" resname="O:Form1.O:CheckBox1.TabStop">
         <source>False</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">153</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">147</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.Caption" resname="O:Form1.O:CheckBox1.Caption">
         <source>'Добавлять в БД'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">154</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">148</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.TabOrder" resname="O:Form1.O:CheckBox1.TabOrder">
         <source>2</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">155</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">149</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox1.OnClick" resname="O:Form1.O:CheckBox1.OnClick">
         <source>CheckBox1Click</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">156</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">150</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.Left" resname="O:Form1.O:CheckBox2.Left">
         <source>8</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">157</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">151</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.Top" resname="O:Form1.O:CheckBox2.Top">
         <source>160</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">158</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">152</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.Width" resname="O:Form1.O:CheckBox2.Width">
         <source>113</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">159</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">153</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.Height" resname="O:Form1.O:CheckBox2.Height">
         <source>17</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">160</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">154</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.TabStop" resname="O:Form1.O:CheckBox2.TabStop">
         <source>False</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">161</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">155</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.Caption" resname="O:Form1.O:CheckBox2.Caption">
         <source>'Пропустить'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">162</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">156</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.TabOrder" resname="O:Form1.O:CheckBox2.TabOrder">
         <source>3</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">163</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">157</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:CheckBox2.OnClick" resname="O:Form1.O:CheckBox2.OnClick">
         <source>CheckBox2Click</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">164</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:Button2.Left" resname="O:Form1.O:Button2.Left">
-        <source>228</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">165</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:Button2.Top" resname="O:Form1.O:Button2.Top">
-        <source>192</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">166</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:Button2.Width" resname="O:Form1.O:Button2.Width">
-        <source>75</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">167</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:Button2.Height" resname="O:Form1.O:Button2.Height">
-        <source>25</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">168</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:Button2.Caption" resname="O:Form1.O:Button2.Caption">
-        <source>'RU'</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">169</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
-      </trans-unit>
-      <trans-unit id="O:Form1.O:Button2.TabOrder" resname="O:Form1.O:Button2.TabOrder">
-        <source>4</source>
-        <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9941474537</prop><prop prop-type="Status">0</prop><prop prop-type="Order">170</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">158</prop><prop prop-type="Type">TCheckBox</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:Timer1.Enabled" resname="O:Form1.O:Timer1.Enabled">
         <source>False</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">171</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">159</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:Timer1.Interval" resname="O:Form1.O:Timer1.Interval">
         <source>500</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">172</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">160</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:Timer1.OnTimer" resname="O:Form1.O:Timer1.OnTimer">
         <source>Timer1Timer</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">173</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">161</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:Timer1.Left" resname="O:Form1.O:Timer1.Left">
         <source>280</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">174</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">162</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:Timer1.Top" resname="O:Form1.O:Timer1.Top">
         <source>8</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">175</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">163</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:UniSQLMonitor1.Active" resname="O:Form1.O:UniSQLMonitor1.Active">
         <source>False</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">176</prop><prop prop-type="Type">TUniSQLMonitor</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">164</prop><prop prop-type="Type">TUniSQLMonitor</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:UniSQLMonitor1.Left" resname="O:Form1.O:UniSQLMonitor1.Left">
         <source>216</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">177</prop><prop prop-type="Type">TUniSQLMonitor</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">165</prop><prop prop-type="Type">TUniSQLMonitor</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:UniSQLMonitor1.Top" resname="O:Form1.O:UniSQLMonitor1.Top">
         <source>8</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">178</prop><prop prop-type="Type">TUniSQLMonitor</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">166</prop><prop prop-type="Type">TUniSQLMonitor</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:WorkTimer.Enabled" resname="O:Form1.O:WorkTimer.Enabled">
         <source>False</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">179</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">167</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:WorkTimer.OnTimer" resname="O:Form1.O:WorkTimer.OnTimer">
         <source>WorkTimerTimer</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">180</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">168</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:WorkTimer.Left" resname="O:Form1.O:WorkTimer.Left">
         <source>328</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">181</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">169</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:WorkTimer.Top" resname="O:Form1.O:WorkTimer.Top">
         <source>8</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">182</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">170</prop><prop prop-type="Type">TTimer</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.Version" resname="O:Form1.O:siLang1.Version">
         <source>'7.6.0.1'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">183</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">171</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.StringsTypes.Strings[0]" resname="O:Form1.O:siLang1.StringsTypes.Strings[0]">
         <source>'TIB_STRINGLIST'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">184</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">172</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.StringsTypes.Strings[1]" resname="O:Form1.O:siLang1.StringsTypes.Strings[1]">
         <source>'TSTRINGLIST'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">185</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">173</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.NumOfLanguages" resname="O:Form1.O:siLang1.NumOfLanguages">
         <source>2</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">186</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">174</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.LangDelim" resname="O:Form1.O:siLang1.LangDelim">
         <source>1</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">187</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">175</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.LangNames.Strings[0]" resname="O:Form1.O:siLang1.LangNames.Strings[0]">
         <source>'Russia'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">188</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">176</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.LangNames.Strings[1]" resname="O:Form1.O:siLang1.LangNames.Strings[1]">
         <source>'English'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">189</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">177</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.Language" resname="O:Form1.O:siLang1.Language">
         <source>'Russia'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">190</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">178</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[0]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[0]">
         <source>'Category'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">191</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">179</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[1]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[1]">
         <source>'SecondaryShortCuts'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">192</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">180</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[2]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[2]">
         <source>'HelpKeyword'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">193</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">181</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[3]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[3]">
         <source>'InitialDir'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">194</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">182</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[4]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[4]">
         <source>'HelpKeyword'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">195</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">183</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[5]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[5]">
         <source>'ActivePage'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">196</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">184</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[6]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[6]">
         <source>'ImeName'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">197</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">185</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[7]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[7]">
         <source>'DefaultExt'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">198</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">186</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[8]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[8]">
         <source>'FileName'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">199</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">187</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[9]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[9]">
         <source>'FieldName'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">200</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">188</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[10]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[10]">
         <source>'PickList'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">201</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">189</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[11]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[11]">
         <source>'DisplayFormat'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">202</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">190</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[12]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[12]">
         <source>'EditMask'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">203</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">191</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[13]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[13]">
         <source>'KeyList'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">204</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">192</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[14]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[14]">
         <source>'LookupDisplayFields'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">205</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">193</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[15]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[15]">
         <source>'DropDownSpecRow'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">206</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">194</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[16]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[16]">
         <source>'TableName'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">207</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">195</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[17]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[17]">
         <source>'DatabaseName'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">208</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">196</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[18]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[18]">
         <source>'IndexName'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">209</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">197</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[19]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[19]">
         <source>'MasterFields'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">210</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">198</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[20]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[20]">
         <source>'SQL'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">211</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">199</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[21]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[21]">
         <source>'DeleteSQL'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">212</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">200</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[22]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[22]">
         <source>'UpdateSQL'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">213</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">201</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[23]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[23]">
         <source>'ModifySQL'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">214</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">202</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[24]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[24]">
         <source>'KeyFields'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">215</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">203</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[25]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[25]">
         <source>'LookupKeyFields'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">216</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">204</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[26]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[26]">
         <source>'LookupResultField'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">217</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">205</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[27]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[27]">
         <source>'DataField'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">218</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">206</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[28]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[28]">
         <source>'KeyField'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">219</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">207</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.ExcludedProperties.Strings[29]" resname="O:Form1.O:siLang1.ExcludedProperties.Strings[29]">
         <source>'ListField'</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">220</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">208</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.Left" resname="O:Form1.O:siLang1.Left">
         <source>304</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">221</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">209</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.Top" resname="O:Form1.O:siLang1.Top">
         <source>96</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">222</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">210</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop></prop-group>
       </trans-unit>
       <trans-unit id="O:Form1.O:siLang1.TranslationData" resname="O:Form1.O:siLang1.TranslationData">
-        <source>73007400430061007000740069006F006E0073005F0055006E00690063006F00640065000D000A00540046006F0072006D00310001005B0023004400540023005D0020004C006F00630061006C00200041006E00740069005000750062006C00690063002000760031002E0031002E00310020007C002000640065007600200041006E00470065006C0001005B0023004400540023005D0020004C006F00630061006C00200041006E00740069005000750062006C00690063002000760031002E0031002E00310020007C002000640065007600200041006E00470065006C0001000D000A004C006100620065006C00360001004400610072006B002D00540069006D0065002E0043006F006D0020002800680065006C007000290001004400610072006B002D00540069006D0065002E0043006F006D0020002800680065006C007000290001000D000A004C006100620065006C00390001003D043004470430043B044C043D0443044E0420003F0440043E043204350440043A044304010069006E0069007400690061006C00200063006800650063006B0001000D000A00470072006F007500700042006F00780031000100210442043004420438044104420438043A0430040100530074006100740069007300740069006300730001000D000A004C006100620065006C00310001001104300437043004200030043D04420438043F04300431043B0438043A0430043A002000010054006800650020006200610073006500200061006E00740069007000750062006C00690063003A0001000D000A004C006100620065006C003200010011043004370430042000340430043D043D044B0445043A00200001005400680065002000620061007300650020006C006900730074003A0001000D000A004C006100620065006C00330001001F0440043E04330440043504410441043A0020000100500072006F00670072006500730073003A0001000D000A004C006100620065006C00340001001F04300431043B0438043A043A0001005000750062006C00690063003A0001000D000A004C006100620065006C00350001001F04400438043204300442043A00010050007200690076006100740065003A0001000D000A004C006100620065006C00370001001D0435043204350440043D044B04350420004104420440043E043A0438043A00010049006E00760061006C006900640020006C0069006E00650073003A0001000D000A004C006100620065006C00380001001F0440043004320438043B044C043D044B04350420004104420440043E043A0438043A002000010043006F007200720065006300740020006C0069006E00650073003A0001000D000A004C006100620065006C003100300001001204400435043C044F04200032044B043F043E043B043D0435043D0438044F043A002000010045007800650063007500740069006F006E002000740069006D0065003A0001000D000A004C006100620065006C0031003100010017043004330440044304360435043D043D044B04390420004404300439043B043A002000010044006F0077006E006C006F0061006400650064002000660069006C0065003A0001000D000A004C006100620065006C003100320001007B00460069006C0065004E0061006D0065007D0001007B00460069006C0065004E0061006D0065007D0001000D000A0043006800650063006B0042006F0078003100010014043E043104300432043B044F0442044C04200032042000110414040100410064006400200074006F00200074006800650020004400420001000D000A0043006800650063006B0042006F007800320001001F0440043E043F04430441044204380442044C04010053006B006900700001000D000A0073007400480069006E00740073005F0055006E00690063006F00640065000D000A007300740044006900730070006C00610079004C006100620065006C0073005F0055006E00690063006F00640065000D000A007300740046006F006E00740073005F0055006E00690063006F00640065000D000A00540046006F0072006D00310001005400610068006F006D00610001005400610068006F006D0061000D000A004C006100620065006C00360001005400610068006F006D00610001000D000A00530074006100740075007300420061007200310001005300650067006F00650020005500490001000D000A00730074004D0075006C00740069004C0069006E00650073005F0055006E00690063006F00640065000D000A007300740044006C0067007300430061007000740069006F006E0073005F0055006E00690063006F00640065000D000A005700610072006E0069006E00670001005700610072006E0069006E006700010001000D000A004500720072006F00720001004500720072006F007200010001000D000A0049006E0066006F0072006D006100740069006F006E00010049006E0066006F0072006D006100740069006F006E00010001000D000A0043006F006E006600690072006D00010043006F006E006600690072006D00010001000D000A0059006500730001002600590065007300010001000D000A004E006F00010026004E006F00010001000D000A004F004B0001004F004B00010001000D000A00430061006E00630065006C000100430061006E00630065006C00010001000D000A00410062006F007200740001002600410062006F0072007400010001000D000A00520065007400720079000100260052006500740072007900010001000D000A00490067006E006F007200650001002600490067006E006F0072006500010001000D000A0041006C006C000100260041006C006C00010001000D000A004E006F00200054006F00200041006C006C0001004E0026006F00200074006F00200041006C006C00010001000D000A00590065007300200054006F00200041006C006C000100590065007300200074006F002000260041006C006C00010001000D000A00480065006C00700001002600480065006C007000010001000D000A007300740053007400720069006E00670073005F0055006E00690063006F00640065000D000A00730074004F00740068006500720053007400720069006E00670073005F0055006E00690063006F00640065000D000A00730074004C006F00630061006C00650073005F0055006E00690063006F00640065000D000A007300740043006F006C006C0065006300740069006F006E0073005F0055006E00690063006F00640065000D000A0073007400430068006100720053006500740073005F0055006E00690063006F00640065000D000A00540046006F0072006D0031000100440045004600410055004C0054005F00430048004100520053004500540001000D000A0053007400610074007500730042006100720031000100440045004600410055004C0054005F00430048004100520053004500540001000D000A004C006100620065006C0036000100440045004600410055004C0054005F00430048004100520053004500540001000D000A00</source>
+        <source>73007400430061007000740069006F006E0073005F0055006E00690063006F00640065000D000A00540046006F0072006D00310001005B0023004400540023005D0020004C006F00630061006C00200041006E00740069005000750062006C00690063002000760031002E0031002E00310020007C002000640065007600200041006E00470065006C0001005B0023004400540023005D0020004C006F00630061006C00200041006E00740069005000750062006C00690063002000760031002E0031002E00310020007C002000640065007600200041006E00470065006C0001000D000A004C006100620065006C00360001004400610072006B002D00540069006D0065002E0043006F006D0020002800680065006C007000290001004400610072006B002D00540069006D0065002E0043006F006D0020002800680065006C007000290001000D000A004C006100620065006C00390001003D043004470430043B044C043D0443044E0420003F0440043E043204350440043A04430401002000200020002000200001000D000A00470072006F007500700042006F00780031000100210442043004420438044104420438043A0430040100530074006100740069007300740069006300730001000D000A004C006100620065006C00310001001104300437043004200030043D04420438043F04300431043B0438043A0430043A002000010054006800650020006200610073006500200061006E00740069007000750062006C00690063003A0001000D000A004C006100620065006C003200010011043004370430042000340430043D043D044B0445043A00200001005400680065002000620061007300650020006C006900730074003A0001000D000A004C006100620065006C00330001001F0440043E04330440043504410441043A0020000100500072006F00670072006500730073003A0001000D000A004C006100620065006C00340001001F04300431043B0438043A043A0001005000750062006C00690063003A0001000D000A004C006100620065006C00350001001F04400438043204300442043A00010050007200690076006100740065003A0001000D000A004C006100620065006C00370001001D0435043204350440043D044B04350420004104420440043E043A0438043A00010049006E00760061006C006900640020006C0069006E00650073003A0001000D000A004C006100620065006C00380001001F0440043004320438043B044C043D044B04350420004104420440043E043A0438043A002000010043006F007200720065006300740020006C0069006E00650073003A0001000D000A004C006100620065006C003100300001001204400435043C044F04200032044B043F043E043B043D0435043D0438044F043A002000010045007800650063007500740069006F006E002000740069006D0065003A0001000D000A004C006100620065006C0031003100010017043004330440044304360435043D043D044B04390420004404300439043B043A002000010044006F0077006E006C006F0061006400650064002000660069006C0065003A0001000D000A004C006100620065006C003100320001007B00460069006C0065004E0061006D0065007D0001007B00460069006C0065004E0061006D0065007D0001000D000A0043006800650063006B0042006F0078003100010014043E043104300432043B044F0442044C04200032042000110414040100410064006400200074006F00200074006800650020004400420001000D000A0043006800650063006B0042006F007800320001001F0440043E043F04430441044204380442044C04010053006B0069007000200069006E0069007400690061006C00200063006800650063006B0001000D000A0073007400480069006E00740073005F0055006E00690063006F00640065000D000A007300740044006900730070006C00610079004C006100620065006C0073005F0055006E00690063006F00640065000D000A007300740046006F006E00740073005F0055006E00690063006F00640065000D000A00540046006F0072006D00310001005400610068006F006D00610001005400610068006F006D0061000D000A004C006100620065006C00360001005400610068006F006D00610001005400610068006F006D0061000D000A00530074006100740075007300420061007200310001005300650067006F00650020005500490001005400610068006F006D0061000D000A00730074004D0075006C00740069004C0069006E00650073005F0055006E00690063006F00640065000D000A007300740044006C0067007300430061007000740069006F006E0073005F0055006E00690063006F00640065000D000A005700610072006E0069006E00670001005700610072006E0069006E006700010001000D000A004500720072006F00720001004500720072006F007200010001000D000A0049006E0066006F0072006D006100740069006F006E00010049006E0066006F0072006D006100740069006F006E00010001000D000A0043006F006E006600690072006D00010043006F006E006600690072006D00010001000D000A0059006500730001002600590065007300010001000D000A004E006F00010026004E006F00010001000D000A004F004B0001004F004B00010001000D000A00430061006E00630065006C000100430061006E00630065006C00010001000D000A00410062006F007200740001002600410062006F0072007400010001000D000A00520065007400720079000100260052006500740072007900010001000D000A00490067006E006F007200650001002600490067006E006F0072006500010001000D000A0041006C006C000100260041006C006C00010001000D000A004E006F00200054006F00200041006C006C0001004E0026006F00200074006F00200041006C006C00010001000D000A00590065007300200054006F00200041006C006C000100590065007300200074006F002000260041006C006C00010001000D000A00480065006C00700001002600480065006C007000010001000D000A007300740053007400720069006E00670073005F0055006E00690063006F00640065000D000A004900440053005F0032003500010011043004370430042000340430043D043D044B0445043A0020003D0435043804370432043504410442043D043E040100440061007400610062006100730065003A00200075006E006B006E006F0077006E0001000D000A004900440053005F0032003600010012044B0420003D043504200037043004330440044304370438043B043804200031043004370443042000340430043D043D044B0445042E002000010059006F0075002000680061007600650020006E006F00740020006C006F00610064006500640020007400680065002000640061007400610062006100730065002E0001000D000A004900440053005F0032003700010012044B0420003D04350420003C043E04360435044204350420003F0440043E0434043E043B043604380442044C042E00010059006F0075002000630061006E0027007400200063006F006E00740069006E00750065002E0001000D000A004900440053005F003300310001001104300437043004200030043D04420438043F04300431043B0438043A0430043A00200001005400680065002000620061007300650020006F0066002000740068006500200061006E00740069007000750062006C00690063003A0001000D000A004900440053005F0033003200010011043004370430042000340430043D043D044B0445043A0020000100440061007400610062006100730065003A0001000D000A004900440053005F003300340001001F0440043E04330440043504410441043A0020000100500072006F00670072006500730073003A0001000D000A004900440053005F003300350001001F04300431043B0438043A043A00200001005000750062006C00690063003A0001000D000A004900440053005F003300360001001F04400438043204300442043A002000010050007200690076006100740065003A0001000D000A004900440053005F003300370001001D0435043204350440043D044B04350420004104420440043E043A0438043A002000010049006E00760061006C006900640020006C0069006E00650073003A0001000D000A004900440053005F003300380001001F0440043004320438043B044C043D044B04350420004104420440043E043A0438043A0020000100430075007200720065006300740020006C0069006E00650073003A0001000D000A004900440053005F003300390001001204400435043C044F04200032044B043F043E043B043D0435043D0438044F043A002000010045007800650063007500740069006F006E002000740069006D0065003A0001000D000A004900440053005F003700350001001F0440043E043304400430043C043C04300420004004350430043B04380437043E04320430043D04300420003104350441043F043B04300442043D043E04200034043B044F04200044043E04400443043C04300420004400610072006B002D00540069006D0065002E0043006F006D0001005400680065002000700072006F006700720061006D00200069007300200069006D0070006C0065006D0065006E00740065006400200066006F00720020006600720065006500200066006F0072002000740068006500200066006F00720075006D0020004400610072006B002D00540069006D0065002E0043006F006D0001000D000A00730074004F00740068006500720053007400720069006E00670073005F0055006E00690063006F00640065000D000A00730074004C006F00630061006C00650073005F0055006E00690063006F00640065000D000A007300740043006F006C006C0065006300740069006F006E0073005F0055006E00690063006F00640065000D000A0073007400430068006100720053006500740073005F0055006E00690063006F00640065000D000A00540046006F0072006D0031000100440045004600410055004C0054005F0043004800410052005300450054000100440045004600410055004C0054005F0043004800410052005300450054000D000A0053007400610074007500730042006100720031000100440045004600410055004C0054005F0043004800410052005300450054000100440045004600410055004C0054005F0043004800410052005300450054000D000A004C006100620065006C0036000100440045004600410055004C0054005F0043004800410052005300450054000100440045004600410055004C0054005F0043004800410052005300450054000D000A00</source>
         <prop-group name="ITEFieldProp">
-        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">223</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">{</prop><prop prop-type="Close">}</prop></prop-group>
+        <prop prop-type="Created">44780.9664327431</prop><prop prop-type="Status">0</prop><prop prop-type="Order">211</prop><prop prop-type="Type">TsiLang</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">{</prop><prop prop-type="Close">}</prop></prop-group>
       </trans-unit>
     </body>
   </file>

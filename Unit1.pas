@@ -117,7 +117,6 @@ var
   GlobalFileName: WideString;
   WorkTime: TStopWatch;
   Language: Int32;
-  procedure ChangeLanguage;
 //  procedure CheckCountDB;
 
 
@@ -149,21 +148,6 @@ uses Unit2, Unit3;
 // FreeAndNil(SQL);
 //end;
 
-procedure ChangeLanguage;
-begin
- if Language = 1 then Language:=2 else Language:=1;
- Form1.siLang1.ActiveLanguage:=Language;
-// case Language of
-//  1:  begin
-//       Form1.siLang1.ActiveLanguage:=Language;
-//      end;
-//  2:  begin
-//
-//      end;
-// end;
-
-end;
-
 procedure TForm1.CheckBox1Click(Sender: TObject);
 begin
  if Form1.CheckBox1.Checked then CheckDB:=0 else CheckDB:=-1;
@@ -177,6 +161,7 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
  Statistic:=Stats.Create;
+ Language:=1;
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);

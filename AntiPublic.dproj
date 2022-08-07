@@ -136,8 +136,7 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Icon_MainIcon>Project1_Icon2.ico</Icon_MainIcon>
         <VerInfo_MinorVer>2</VerInfo_MinorVer>
-        <VerInfo_Keys>CompanyName=https://dark-time.com;FileDescription=$(MSBuildProjectName);FileVersion=1.2.1.0;InternalName=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;LegalCopyright=AnGel for Dark-Time.Com;LegalTrademarks=Dark-Time.Com;OriginalFilename=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.2.1.0;Comments=Dark-Time.Com</VerInfo_Keys>
-        <VerInfo_Release>1</VerInfo_Release>
+        <VerInfo_Keys>CompanyName=https://dark-time.com;FileDescription=$(MSBuildProjectName);FileVersion=1.2.0.0;InternalName=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;LegalCopyright=AnGel for Dark-Time.Com;LegalTrademarks=Dark-Time.Com;OriginalFilename=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.2.0.0;Comments=Dark-Time.Com</VerInfo_Keys>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">

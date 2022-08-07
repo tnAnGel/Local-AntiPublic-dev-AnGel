@@ -4,5 +4,111 @@
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:AntiPublic:Unit1.Download">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,148,175" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Download.FileName" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Download.Execute()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Download.Create(System.Boolean,System.WideString)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Download.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Download.CheckRegExpr(System.string)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Download.GetCheckedLine(System.string)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:AntiPublic:Unit1.TForm1">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="177,1,210,640" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.img_stop" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.img_play" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.GroupBox1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label2" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label3" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label4" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label5" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.StatusBar1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.CheckBox1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label6" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label7" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.img_load" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Timer1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label8" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.CheckBox2" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label9" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.UniSQLMonitor1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label10" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.WorkTimer" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label11" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.Label12" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.img_search" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.TForm1.siLang1" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.Label6Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.FormShow(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.img_loadClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.FormCreate(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.Timer1Timer(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.CheckBox2Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.CheckBox1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.FormDestroy(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.img_playClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.img_stopClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.WorkTimerTimer(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.Label12Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.TForm1.img_searchClick(System.TObject)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:AntiPublic:Unit1.Stats">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="28,204,141,280" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.iPrivateList" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.iPublicList" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.GoodLine" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.BadLine" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.NextLine" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.MaxLine" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.ProgressLine" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Stats.CountDataBase" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Stats.Create()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Stats.ReStartConf()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Stats.ReStartThread()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Stats.GetCountAP()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Stats.ReformData(System.string)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:AntiPublic:Unit1.Th">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="425,1,159,340" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.ResultFolder" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.TempList" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.AddList" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.FileName" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.ResultPatchDir" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.Connect" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.SQL" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.Th.CS" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.Execute()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.Create(System.Boolean,System.WideString)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.CheckRegExpr(System.string)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.GetCheckedLine(System.string)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.CheckLinsDB(out@System.Classes.TStringList)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.AddLinsDB(out@System.Classes.TStringList)" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.CreateFolders()" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.Th.ReCreateConnect()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:AntiPublic:Unit1.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.Form1" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.ThreadWork" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.Statistic" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.TypeIndex" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.db_name" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.SkipVerifyFile" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.CheckDB" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.GlobalFileName" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.WorkTime" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.Language" />
+      <reference referencedUin="delphi:e_method:src:AntiPublic:Unit1.@unitclass.ChangeLanguage()" />
+      <reference referencedUin="delphi:e_field:src:AntiPublic:Unit1.@unitclass.CountCheck" />
+      <reference referencedUin="delphi:l_ast:src:AntiPublic:Unit1.@unitclass.Form1" />
+      <reference referencedUin="delphi:l_ast:src:AntiPublic:Unit1.@unitclass.Statistic" />
+    </reference>
   </view>
 </nodeSet>
