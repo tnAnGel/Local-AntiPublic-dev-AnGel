@@ -277,7 +277,7 @@ end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
- Form1.Label1.Caption:='База антипаблика: '+Statistic.ReformData(Statistic.CountDataBase.ToString);
+ Form1.Label1.Caption:=siLang1.GetTextOrDefault('IDS_30' (* 'База антипаблика: '*) )+Statistic.ReformData(Statistic.CountDataBase.ToString);
  if SkipVerifyFile = 0 then Form1.Label2.Caption:=siLang1.GetTextOrDefault('IDS_32' (* 'База данных: ' *) )+Statistic.ReformData(Statistic.MaxLine.ToString)
   else Form1.Label2.Caption:=siLang1.GetTextOrDefault('IDS_25' (* 'База данных: неизвестно' *) );
  Form1.Label3.Caption:=siLang1.GetTextOrDefault('IDS_34' (* 'Прогресс: ' *) )+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
