@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
   Vcl.ExtCtrls, UniProvider, SQLiteUniProvider, DBAccess, Uni, Data.DB, CREncryption,
-  MemDS;
+  MemDS, siComp, siLngLnk;
 
 type
   TForm3 = class(TForm)
@@ -15,6 +15,7 @@ type
     Image1: TImage;
     Image2: TImage;
     LabeledEdit1: TLabeledEdit;
+    siLangLinked1: TsiLangLinked;
     procedure Image1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -42,6 +43,7 @@ end;
 procedure TForm3.FormShow(Sender: TObject);
 begin
  Form1.Enabled:=False;
+ siLangLinked1.ActiveLanguage:=Unit1.Language;
 end;
 
 procedure TForm3.Image1Click(Sender: TObject);
@@ -79,7 +81,7 @@ begin
    SQL.FindNext;
    Form3.Memo1.Lines.Add(email+':'+password);
   end;
- end else Form3.Memo1.Lines.Add('Нет данных');
+ end else Form3.Memo1.Lines.Add(siLangLinked1.GetTextOrDefault('IDS_9' (* 'Нет данных' *) ));
 
 
  FreeAndNil(SQL);

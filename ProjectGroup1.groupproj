@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D83A4492-B56B-41A5-AC83-16C9BAA38C70}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AntiPublic.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ENU\AntiPublic_ENU.bdsproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RUS\AntiPublic_RUS.bdsproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AntiPublic">
+        <MSBuild Projects="AntiPublic.dproj"/>
+    </Target>
+    <Target Name="AntiPublic:Clean">
+        <MSBuild Projects="AntiPublic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AntiPublic:Make">
+        <MSBuild Projects="AntiPublic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AntiPublic_ENU">
+        <MSBuild Projects="ENU\AntiPublic_ENU.bdsproj"/>
+    </Target>
+    <Target Name="AntiPublic_ENU:Clean">
+        <MSBuild Projects="ENU\AntiPublic_ENU.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AntiPublic_ENU:Make">
+        <MSBuild Projects="ENU\AntiPublic_ENU.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="AntiPublic_RUS">
+        <MSBuild Projects="RUS\AntiPublic_RUS.bdsproj"/>
+    </Target>
+    <Target Name="AntiPublic_RUS:Clean">
+        <MSBuild Projects="RUS\AntiPublic_RUS.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AntiPublic_RUS:Make">
+        <MSBuild Projects="RUS\AntiPublic_RUS.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AntiPublic;AntiPublic_ENU;AntiPublic_RUS"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AntiPublic:Clean;AntiPublic_ENU:Clean;AntiPublic_RUS:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AntiPublic:Make;AntiPublic_ENU:Make;AntiPublic_RUS:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -71,6 +71,7 @@
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <SanitizedProjectName>AntiPublic</SanitizedProjectName>
         <Custom_Styles>Light|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Light.vsf</Custom_Styles>
+        <DCC_OutputDRCFile>true</DCC_OutputDRCFile>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;RESTComponents;fmxase;DBXDb2Driver;DBXInterBaseDriver;vclactnband;vclFireDAC;bindcompvclsmp;emsclientfiredac;tethering;svnui;DataSnapFireDAC;FireDACADSDriver;cxLibraryRS27;DBXMSSQLDriver;cxPivotGridRS27;DatasnapConnectorsFreePascal;FireDACMSSQLDriver;unidac270;vcltouch;vcldb;bindcompfmx;svn;crcontrols270;DBXOracleDriver;inetdb;FmxTeeUI;emsedge;fmx;FireDACIBDriver;fmxdae;vcledge;FireDACDBXDriver;dbexpress;IndyCore;vclx;dsnap;emsclient;DataSnapCommon;FireDACCommon;RESTBackendComponents;DataSnapConnectors;dxBarExtItemsRS27;VCLRESTComponents;soapserver;JclDeveloperTools;vclie;bindengine;DBXMySQLDriver;CloudService;FireDACOracleDriver;FireDACMySQLDriver;DBXFirebirdDriver;cxExportRS27;FireDACCommonODBC;FireDACCommonDriver;DataSnapClient;inet;IndyIPCommon;bindcompdbx;vcl;IndyIPServer;DBXSybaseASEDriver;dacvcl270;IndySystem;vquery270;FireDACDb2Driver;dac270;dsnapcon;dxComnRS27;madExcept_;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;madBasic_;TeeDB;FireDAC;Jcl;dxCoreRS27;dxmdsRS27;emshosting;unidacfmx270;FireDACSqliteDriver;FireDACPgDriver;FireDACASADriver;DBXOdbcDriver;FireDACTDataDriver;FMXTee;soaprtl;DbxCommonDriver;Tee;DataSnapServer;xmlrtl;soapmidas;DataSnapNativeClient;fmxobj;vclwinx;FireDACDSDriver;rtl;emsserverresource;DbxClientDriver;madDisAsm_;DBXSybaseASADriver;dxdbtrRS27;CustomIPTransport;vcldsnap;unidacvcl270;bindcomp;appanalytics;DBXInformixDriver;dxGDIPlusRS27;IndyIPClient;bindcompvcl;dxServerModeRS27;TeeUI;dxorgcRS27;dbxcds;VclSmp;adortl;FireDACODBCDriver;JclVcl;DataSnapIndy10ServerTransport;cxGridRS27;dsnapxml;DataSnapProviderClient;dbrtl;IndyProtocols;inetdbxpress;FireDACMongoDBDriver;dxBarRS27;JclContainers;DataSnapServerMidas;$(DCC_UsePackage)</DCC_UsePackage>
@@ -134,10 +135,8 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Icon_MainIcon>Project1_Icon2.ico</Icon_MainIcon>
-        <UWP_DelphiLogo44>..\..\Downloads\favicon.ico</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>..\..\Downloads\favicon.ico</UWP_DelphiLogo150>
-        <VerInfo_MinorVer>1</VerInfo_MinorVer>
-        <VerInfo_Keys>CompanyName=https://dark-time.com;FileDescription=$(MSBuildProjectName);FileVersion=1.1.1.0;InternalName=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;LegalCopyright=AnGel for Dark-Time.Com;LegalTrademarks=Dark-Time.Com;OriginalFilename=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.1.1.0;Comments=Dark-Time.Com</VerInfo_Keys>
+        <VerInfo_MinorVer>2</VerInfo_MinorVer>
+        <VerInfo_Keys>CompanyName=https://dark-time.com;FileDescription=$(MSBuildProjectName);FileVersion=1.2.1.0;InternalName=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;LegalCopyright=AnGel for Dark-Time.Com;LegalTrademarks=Dark-Time.Com;OriginalFilename=[#DT#] Local AntiPublic v1.1.1 | dev AnGel;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.2.1.0;Comments=Dark-Time.Com</VerInfo_Keys>
         <VerInfo_Release>1</VerInfo_Release>
     </PropertyGroup>
     <ItemGroup>
@@ -156,6 +155,15 @@
             <Form>Form3</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <None Include="ModelSupport_AntiPublic\default.txaPackage"/>
+        <None Include="ModelSupport_AntiPublic\Unit2\default.txvpck"/>
+        <None Include="ModelSupport_AntiPublic\Unit1\default.txvpck"/>
+        <None Include="ModelSupport_AntiPublic\Unit3\default.txvpck"/>
+        <None Include="ModelSupport_AntiPublic\Unit2\default.txaPackage"/>
+        <None Include="ModelSupport_AntiPublic\Unit3\default.txaPackage"/>
+        <None Include="ModelSupport_AntiPublic\AntiPublic\default.txaPackage"/>
+        <None Include="ModelSupport_AntiPublic\Unit1\default.txaPackage"/>
+        <None Include="ModelSupport_AntiPublic\AntiPublic\default.txvpck"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -182,28 +190,95 @@
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
+                <Language>
+                    <Language Name="ProjectLang">$00000419</Language>
+                </Language>
+                <Resource_DLL_Projects>
+                    <Resource_DLL_Projects Name="Item0">Английский (США)*$00000409*ENU*ENU</Resource_DLL_Projects>
+                    <Resource_DLL_Projects Name="Item1">Русский (Россия)*$00000419*RUS*RUS</Resource_DLL_Projects>
+                </Resource_DLL_Projects>
+                <RDP_Source_Files>
+                    <RDP_Source_Files Name="Item0">Unit1.dfm</RDP_Source_Files>
+                    <RDP_Source_Files Name="Item1">Unit2.dfm</RDP_Source_Files>
+                    <RDP_Source_Files Name="Item2">Unit3.dfm</RDP_Source_Files>
+                    <RDP_Source_Files Name="Item3">Win64\Release\AntiPublic.drc</RDP_Source_Files>
+                </RDP_Source_Files>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>
             <Deployment Version="3">
-                <DeployFile LocalName="Win64\Release\AntiPublic.exe" Configuration="Release" Class="ProjectOutput">
+                <DeployFile LocalName="ModelSupport_AntiPublic\Unit2\default.txvpck" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win64">
-                        <RemoteName>AntiPublic.exe</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\..\Downloads\favicon.ico" Configuration="Release" Class="UWP_DelphiLogo44">
+                <DeployFile LocalName="ModelSupport_AntiPublic\Unit3\default.txvpck" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win64">
-                        <RemoteDir>Assets\</RemoteDir>
-                        <RemoteName>Logo44x44.png</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\Unit2\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\Unit3\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\Unit1\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\Unit1\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="Win32\Debug\AntiPublic.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>AntiPublic.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\AntiPublic\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Configuration="Release" Class="UWP_DelphiLogo44">
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo44x44.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win64\Release\AntiPublic.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>AntiPublic.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_AntiPublic\AntiPublic\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1100,6 +1175,7 @@
                 <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
             </Deployment>
+            <ModelSupport>True</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>

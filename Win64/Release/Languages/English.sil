@@ -1,0 +1,27 @@
+
+[Captions]
+TForm1.CheckBox1=Добавлять в БД~!@#$Add to the DB~!@#$
+TForm1.CheckBox2=Пропустить~!@#$Skip~!@#$
+TForm1.GroupBox1=Статистика~!@#$Statistics~!@#$
+TForm1.Label1=База антипаблика: ~!@#$The base antipublic:~!@#$
+TForm1.Label10=Время выполнения: ~!@#$Execution time:~!@#$
+TForm1.Label11=Загруженный файл: ~!@#$Downloaded file:~!@#$
+TForm1.Label12={FileName}~!@#${FileName}~!@#$
+TForm1.Label2=База данных: ~!@#$The base list:~!@#$
+TForm1.Label3=Прогресс: ~!@#$Progress:~!@#$
+TForm1.Label4=Паблик:~!@#$Public:~!@#$
+TForm1.Label5=Приват:~!@#$Private:~!@#$
+TForm1.Label6=Dark-Time.Com (help)~!@#$Dark-Time.Com (help)~!@#$
+TForm1.Label7=Неверные строки:~!@#$Invalid lines:~!@#$
+TForm1.Label8=Правильные строки: ~!@#$Correct lines:~!@#$
+TForm1.Label9=начальную проверку~!@#$initial check~!@#$
+TForm1.TForm1=[#DT#] Local AntiPublic v1.1.1 | dev AnGel~!@#$[#DT#] Local AntiPublic v1.1.1 | dev AnGel~!@#$
+
+[Language names - for internal use only!]
+Language_1=Russia
+Language_2=English
+
+[OPTIONS]
+Delimiter=~!@#$
+IsUTF8File=0
+

@@ -7,7 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
   Vcl.ComCtrls, Winapi.ShellAPI, UniProvider, SQLiteUniProvider, DBAccess, Uni, Data.DB, CREncryption,
   MemDS, System.IniFiles, RegExpr, System.RegularExpressions,
-  Vcl.Imaging.pngimage, DASQLMonitor, UniSQLMonitor, System.SyncObjs, System.Diagnostics;
+  Vcl.Imaging.pngimage, DASQLMonitor, UniSQLMonitor, System.SyncObjs, System.Diagnostics,
+  siComp;
 
 type
   TForm1 = class(TForm)
@@ -34,6 +35,7 @@ type
     Label11: TLabel;
     Label12: TLabel;
     img_search: TImage;
+    siLang1: TsiLang;
     procedure Label6Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure img_loadClick(Sender: TObject);
@@ -114,6 +116,8 @@ var
   CheckDB: Integer;
   GlobalFileName: WideString;
   WorkTime: TStopWatch;
+  Language: Int32;
+  procedure ChangeLanguage;
 //  procedure CheckCountDB;
 
 
@@ -145,6 +149,21 @@ uses Unit2, Unit3;
 // FreeAndNil(SQL);
 //end;
 
+procedure ChangeLanguage;
+begin
+ if Language = 1 then Language:=2 else Language:=1;
+ Form1.siLang1.ActiveLanguage:=Language;
+// case Language of
+//  1:  begin
+//       Form1.siLang1.ActiveLanguage:=Language;
+//      end;
+//  2:  begin
+//
+//      end;
+// end;
+
+end;
+
 procedure TForm1.CheckBox1Click(Sender: TObject);
 begin
  if Form1.CheckBox1.Checked then CheckDB:=0 else CheckDB:=-1;
@@ -164,10 +183,11 @@ procedure TForm1.FormDestroy(Sender: TObject);
 var INI: Tinifile;
 begin
  INI:=TiniFile.Create(extractfilepath(paramstr(0))+'settings.ini');
- Ini.WriteInteger('CONF','TypeIndex', TypeIndex);
- Ini.WriteInteger('CONF','CheckDB', CheckDB);
- Ini.WriteInteger('CONF','SkipVerifyFile', SkipVerifyFile);
- Ini.WriteString('CONF','db_name', 'antipublic.db');
+ Ini.WriteInteger('CONF', 'TypeIndex', TypeIndex);
+ Ini.WriteInteger('CONF', 'CheckDB', CheckDB);
+ Ini.WriteInteger('CONF', 'SkipVerifyFile', SkipVerifyFile);
+ Ini.WriteString('CONF', 'db_name', 'antipublic.db');
+ Ini.WriteInteger('CONF', 'Language', Language);
  FreeAndNil(INI);
 end;
 
@@ -201,11 +221,12 @@ begin
      0: вести запись RAW файла
  }
  TypeIndex:=INI.ReadInteger('CONF','TypeIndex', -1);
+ Language:=INI.ReadInteger('CONF','Language', 1);
  FreeAndNil(INI);
 
   if SkipVerifyFile = -1  then Form1.CheckBox2.Checked:=True else Form1.CheckBox2.Checked:=False;
   if CheckDB = 0 then Form1.CheckBox1.Checked:=True else Form1.CheckBox1.Checked:=False;
-
+ Form1.siLang1.ActiveLanguage:=Language;
  if not FileExists('antipublic.db') then
  begin
   Form2.Show;
@@ -225,7 +246,7 @@ begin
   Statistic.ReStartConf;
   GlobalFileName:=Open.FileName;
   if SkipVerifyFile = 0 then Download.Create(False, Open.FileName) else
-  Form1.Label2.Caption:='База данных: неизвестно';
+  Form1.Label2.Caption:=Form1.siLang1.GetTextOrDefault('IDS_25' (* 'База данных: неизвестно' *) );
  end;
  FreeAndNil(Open);
  Statistic.GetCountAP;
@@ -238,7 +259,7 @@ procedure TForm1.img_playClick(Sender: TObject);
 begin
  if Length(GlobalFileName) < 2 then
  begin
-  MessageDlg('Вы не загрузили базу данных. '+#10#13+'Вы не можете продолжить.', mtError, [mbOk], 0);
+  MessageDlg(Form1.siLang1.GetTextOrDefault('IDS_26' (* 'Вы не загрузили базу данных. ' *) )+#10#13+Form1.siLang1.GetTextOrDefault('IDS_27' (* 'Вы не можете продолжить.' *) ), mtError, [mbOk], 0);
  end else
  begin
   Statistic.GetCountAP;
@@ -246,7 +267,6 @@ begin
   Statistic.ReStartThread;
   Th.Create(False, GlobalFileName);  // не добавлять третий параметр. Попробовать вернуть все как было
  end;
-
 end;
 
 procedure TForm1.img_searchClick(Sender: TObject);
@@ -267,24 +287,24 @@ end;
 
 procedure TForm1.Label6Click(Sender: TObject);
 begin
- ShellExecute(handle, 'open', 'https://dark-time.com/threads/36155/', nil, nil, SW_SHOW);
+ ShellExecute(handle,'open', 'https://dark-time.com/threads/36155/', nil, nil, SW_SHOW);
 end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
  Form1.Label1.Caption:='База антипаблика: '+Statistic.ReformData(Statistic.CountDataBase.ToString);
- if SkipVerifyFile = 0 then Form1.Label2.Caption:='База данных: '+Statistic.ReformData(Statistic.MaxLine.ToString)
-  else Form1.Label2.Caption:='База данных: неизвестно';
- Form1.Label3.Caption:='Прогресс: '+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
- Form1.Label4.Caption:='Паблик: '+Statistic.ReformData(Statistic.iPublicList.ToString);
- Form1.Label5.Caption:='Приват: '+Statistic.ReformData(Statistic.iPrivateList.ToString);
- Form1.Label7.Caption:='Неверные строки: '+Statistic.ReformData(Statistic.BadLine.ToString);
- Form1.Label8.Caption:='Правильные строки: '+Statistic.ReformData(Statistic.GoodLine.ToString);
+ if SkipVerifyFile = 0 then Form1.Label2.Caption:=siLang1.GetTextOrDefault('IDS_32' (* 'База данных: ' *) )+Statistic.ReformData(Statistic.MaxLine.ToString)
+  else Form1.Label2.Caption:=siLang1.GetTextOrDefault('IDS_25' (* 'База данных: неизвестно' *) );
+ Form1.Label3.Caption:=siLang1.GetTextOrDefault('IDS_34' (* 'Прогресс: ' *) )+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
+ Form1.Label4.Caption:=siLang1.GetTextOrDefault('IDS_35' (* 'Паблик: ' *) )+Statistic.ReformData(Statistic.iPublicList.ToString);
+ Form1.Label5.Caption:=siLang1.GetTextOrDefault('IDS_36' (* 'Приват: ' *) )+Statistic.ReformData(Statistic.iPrivateList.ToString);
+ Form1.Label7.Caption:=siLang1.GetTextOrDefault('IDS_37' (* 'Неверные строки: ' *) )+Statistic.ReformData(Statistic.BadLine.ToString);
+ Form1.Label8.Caption:=siLang1.GetTextOrDefault('IDS_38' (* 'Правильные строки: ' *) )+Statistic.ReformData(Statistic.GoodLine.ToString);
 end;
 
 procedure TForm1.WorkTimerTimer(Sender: TObject);
 begin
- Form1.Label10.Caption:='Время выполнения: '+WorkTime.Elapsed.ToString;
+ Form1.Label10.Caption:=siLang1.GetTextOrDefault('IDS_39' (* 'Время выполнения: ' *) )+WorkTime.Elapsed.ToString;
 end;
 
 { Th }
@@ -323,7 +343,7 @@ begin
 
  WorkTime:=TStopwatch.StartNew;
  WorkTime.Start;
- Form1.Label10.Caption:='Время выполнения: '+WorkTime.Elapsed.ToString;
+ Form1.Label10.Caption:=Form1.siLang1.GetTextOrDefault('IDS_39' (* 'Время выполнения: ' *) )+WorkTime.Elapsed.ToString;
  Form1.WorkTimer.Enabled:=True;
 end;
 
@@ -338,23 +358,23 @@ begin
  FreeAndNil(TempList);
  CS.Enter;
  Form1.Timer1.Enabled:=False;
- Form1.Label1.Caption:='База антипаблика: '+Statistic.ReformData(Statistic.CountDataBase.ToString);
- if SkipVerifyFile = 0 then Form1.Label2.Caption:='База данных: '+Statistic.ReformData(Statistic.MaxLine.ToString)
-  else Form1.Label2.Caption:='База данных: неизвестно';
+ Form1.Label1.Caption:=Form1.siLang1.GetTextOrDefault('IDS_31' (* 'База антипаблика: ' *) )+Statistic.ReformData(Statistic.CountDataBase.ToString);
+ if SkipVerifyFile = 0 then Form1.Label2.Caption:=Form1.siLang1.GetTextOrDefault('IDS_32' (* 'База данных: ' *) )+Statistic.ReformData(Statistic.MaxLine.ToString)
+  else Form1.Label2.Caption:=Form1.siLang1.GetTextOrDefault('IDS_25' (* 'База данных: неизвестно' *) );
 
 // Form1.Label2.Caption:='База данных: '+Statistic.ReformData(Statistic.MaxLine.ToString);
- Form1.Label3.Caption:='Прогресс: '+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
- Form1.Label4.Caption:='Паблик: '+Statistic.ReformData(Statistic.iPublicList.ToString);
- Form1.Label5.Caption:='Приват: '+Statistic.ReformData(Statistic.iPrivateList.ToString);
- Form1.Label7.Caption:='Неверные строки: '+Statistic.ReformData(Statistic.BadLine.ToString);
- Form1.Label8.Caption:='Правильные строки: '+Statistic.ReformData(Statistic.GoodLine.ToString);
+ Form1.Label3.Caption:=Form1.siLang1.GetTextOrDefault('IDS_34' (* 'Прогресс: ' *) )+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
+ Form1.Label4.Caption:=Form1.siLang1.GetTextOrDefault('IDS_35' (* 'Паблик: ' *) )+Statistic.ReformData(Statistic.iPublicList.ToString);
+ Form1.Label5.Caption:=Form1.siLang1.GetTextOrDefault('IDS_36' (* 'Приват: ' *) )+Statistic.ReformData(Statistic.iPrivateList.ToString);
+ Form1.Label7.Caption:=Form1.siLang1.GetTextOrDefault('IDS_37' (* 'Неверные строки: ' *) )+Statistic.ReformData(Statistic.BadLine.ToString);
+ Form1.Label8.Caption:=Form1.siLang1.GetTextOrDefault('IDS_38' (* 'Правильные строки: ' *) )+Statistic.ReformData(Statistic.GoodLine.ToString);
  Form1.img_stop.Enabled:=False;
  Form1.img_play.Enabled:=True;
  Form1.img_load.Enabled:=True;
  Form1.img_search.Enabled:=True;
  Form1.WorkTimer.Enabled:=False;
  WorkTime.Stop;
- Form1.Label10.Caption:='Время выполнения: '+WorkTime.Elapsed.ToString;
+ Form1.Label10.Caption:=Form1.siLang1.GetTextOrDefault('IDS_39' (* 'Время выполнения: ' *) )+WorkTime.Elapsed.ToString;
  CS.Leave;
 // Statistic.GetCountAP;
 
@@ -482,13 +502,13 @@ begin
  Connect:=TUniConnection.Create(nil);
  SQL:=TUniQuery.Create(nil);
  Connect.ProviderName:='SQLite';
- Connect.Database:=ExtractFilePath(ParamStr(0))+'antipublic.db';
+ Connect.Database:=ExtractFilePath(ParamStr(0))+ 'antipublic.db';
  Connect.Connect;
  SQL.Connection:=Connect;
  SQL.SQL.Text:='SELECT COUNT(*) FROM data';
  SQL.Open;
  CountDataBase:=SQL.Fields[0].AsInteger;
- Form1.Label1.Caption:='База антипаблика: '+ReformData(CountDataBase.ToString);
+ Form1.Label1.Caption:=Form1.siLang1.GetTextOrDefault('IDS_31' (* 'База антипаблика: ' *) )+ReformData(CountDataBase.ToString);
  FreeAndNil(Connect);
  FreeAndNil(SQL);
 end;
@@ -664,7 +684,7 @@ begin
  CreateDir(ExtractFilePath(Application.ExeName)+ ResultFolder);
  TS:=TStringList.Create;
  TS.Add('');
- TS.Add('Программа реализована бесплатно для форума Dark-Time.Com');
+ TS.Add(Form1.siLang1.GetTextOrDefault('IDS_75' (* 'Программа реализована бесплатно для форума Dark-Time.Com' *) ));
  TS.Add('');
  TS.SaveToFile(ExtractFilePath(Application.ExeName)+ResultFolder+'/Private data (Dark-Time.Com).txt');
  TS.SaveToFile(ExtractFilePath(Application.ExeName)+ResultFolder+'/Public data (Dark-Time.Com).txt');
@@ -710,7 +730,7 @@ begin
 
  WorkTime:=TStopwatch.StartNew;
  WorkTime.Start;
- Form1.Label10.Caption:='Время выполнения: '+WorkTime.Elapsed.ToString;
+ Form1.Label10.Caption:=Form1.siLang1.GetTextOrDefault('IDS_39' (* 'Время выполнения: ' *) )+WorkTime.Elapsed.ToString;
  Form1.WorkTimer.Enabled:=True;
 
 end;
@@ -722,18 +742,18 @@ begin
  Form1.img_play.Enabled:=True;
  Form1.img_load.Enabled:=True;
  Form1.img_search.Enabled:=True;
- Form1.Label1.Caption:='База антипаблика: '+Statistic.ReformData(Statistic.CountDataBase.ToString);
- Form1.Label2.Caption:='База данных: '+Statistic.ReformData(Statistic.MaxLine.ToString);
- Form1.Label3.Caption:='Прогресс: '+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
- Form1.Label4.Caption:='Паблик: '+Statistic.ReformData(Statistic.iPublicList.ToString);
- Form1.Label5.Caption:='Приват: '+Statistic.ReformData(Statistic.iPrivateList.ToString);
- Form1.Label7.Caption:='Неверные строки: '+Statistic.ReformData(Statistic.BadLine.ToString);
- Form1.Label8.Caption:='Правильные строки: '+Statistic.ReformData(Statistic.GoodLine.ToString);
+ Form1.Label1.Caption:=Form1.siLang1.GetTextOrDefault('IDS_31' (* 'База антипаблика: ' *) )+Statistic.ReformData(Statistic.CountDataBase.ToString);
+ Form1.Label2.Caption:=Form1.siLang1.GetTextOrDefault('IDS_32' (* 'База данных: ' *) )+Statistic.ReformData(Statistic.MaxLine.ToString);
+ Form1.Label3.Caption:=Form1.siLang1.GetTextOrDefault('IDS_34' (* 'Прогресс: ' *) )+Statistic.ReformData(Statistic.ProgressLine.ToString) +' / '+Statistic.ReformData(Statistic.GoodLine.ToString);
+ Form1.Label4.Caption:=Form1.siLang1.GetTextOrDefault('IDS_35' (* 'Паблик: ' *) )+Statistic.ReformData(Statistic.iPublicList.ToString);
+ Form1.Label5.Caption:=Form1.siLang1.GetTextOrDefault('IDS_36' (* 'Приват: ' *) )+Statistic.ReformData(Statistic.iPrivateList.ToString);
+ Form1.Label7.Caption:=Form1.siLang1.GetTextOrDefault('IDS_37' (* 'Неверные строки: ' *) )+Statistic.ReformData(Statistic.BadLine.ToString);
+ Form1.Label8.Caption:=Form1.siLang1.GetTextOrDefault('IDS_38' (* 'Правильные строки: ' *) )+Statistic.ReformData(Statistic.GoodLine.ToString);
  Statistic.GetCountAP;
 
  Form1.WorkTimer.Enabled:=False;
  WorkTime.Stop;
- Form1.Label10.Caption:='Время выполнения: '+WorkTime.Elapsed.ToString;
+ Form1.Label10.Caption:=Form1.siLang1.GetTextOrDefault('IDS_39' (* 'Время выполнения: ' *) )+WorkTime.Elapsed.ToString;
  inherited;
 end;
 

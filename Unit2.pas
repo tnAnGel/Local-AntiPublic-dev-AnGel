@@ -6,7 +6,8 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
   Vcl.ExtCtrls, UniProvider, SQLiteUniProvider, DBAccess, Uni, Data.DB, CREncryption,
-  MemDS, Winapi.ShellAPI, Vcl.Imaging.pngimage;
+  MemDS, Winapi.ShellAPI, Vcl.Imaging.pngimage, dxGDIPlusClasses, siComp,
+  siLngLnk;
 
 type
   TForm2 = class(TForm)
@@ -19,6 +20,8 @@ type
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
+    Image4: TImage;
+    siLangLinked1: TsiLangLinked;
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Image2Click(Sender: TObject);
@@ -27,6 +30,7 @@ type
     procedure RadioButton2Click(Sender: TObject);
     procedure RadioButton3Click(Sender: TObject);
     procedure Image3Click(Sender: TObject);
+    procedure Image4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,6 +50,7 @@ uses Unit1;
 procedure TForm2.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
  Form1.Enabled:=True;
+ Form1.siLang1.ActiveLanguage:=Unit1.Language;
  Form2.Close;
 end;
 
@@ -81,7 +86,7 @@ begin
  Connect.ExecSQL('PRAGMA cache_size = 256000');
  FreeAndNil(Connect);
 
- buttonSelected := MessageDlg('База данных создана, приложение будет перезапущено.', mtInformation, [mbOk], 0);
+ buttonSelected := MessageDlg(siLangLinked1.GetTextOrDefault('IDS_200' (* 'База данных создана, приложение будет перезапущено.' *) ), mtInformation, [mbOk], 0);
  if buttonSelected = mrOK then
  begin
   ShellExecute(Self.Handle, nil, PChar(Application.ExeName), nil, nil, SW_SHOW);
@@ -97,6 +102,12 @@ end;
 procedure TForm2.Image3Click(Sender: TObject);
 begin
  ShellExecute(handle, 'open', 'https://dark-time.com/threads/36155/', nil, nil, SW_SHOW);
+end;
+
+procedure TForm2.Image4Click(Sender: TObject);
+begin
+ if Unit1.Language = 1 then Unit1.Language:=2 else Unit1.Language:=1;
+  siLangLinked1.ActiveLanguage:=Unit1.Language;
 end;
 
 procedure TForm2.RadioButton1Click(Sender: TObject);
